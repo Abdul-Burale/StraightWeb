@@ -1,13 +1,16 @@
-import './App.css'
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './components/layout'
+import Home  from './components/button'
 function App() {
 
   return (
-    <>
-      <div className="flex h-screen overflow-hidden">
-      <h1>StraightApi!</h1>
-      </div>
-    </>
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   )
 }
 

@@ -1,13 +1,8 @@
-type Props = {
-    name: string
-    messageCount: number
-}
-export const Home = (page: Props) => {
+export default function Home() {
     return (
         <div>
-            <h1> {page.name} </h1>
+            <h1> Testing React Router  </h1>
             <p>
-            The Current Count is {page.messageCount}
             </p>
         </div>
     )
